@@ -1,0 +1,61 @@
+@page {
+margin: 0.5cm;
+}
+body {
+background:#fff;
+font: 12pt Georgia, "Times New Roman", Times, serif;
+line-height: 1.3;
+padding:0;
+}
+h1 {
+font-size: 17pt;
+}
+h2 {
+font-size: 14pt;
+margin-top: 25px;
+}
+img {
+border: 0;
+max-width: 500px;
+vertical-align:middle;
+}
+blockquote, ul {
+margin: 0;
+}
+p a[href^="http://"]:after, a[href^="https://"]:after {
+content: " (" attr(href) ")";
+}
+p a[href^="#"]:after {
+display: none;
+}
+p a {
+word-wrap: break-word;
+}
+a {
+color: #000;
+}
+table {
+page-break-inside:avoid;
+}
+table, th, td {
+border-collapse:collapse;
+border:1px solid #ccc;
+}
+.header::before {
+border-bottom: 1px solid #bbb;
+content:attr(data-title);
+font-size:18pt;
+font-style: italic;
+margin-bottom:20px;
+}
+.header *,
+.breadcrumbs,
+.searchform,
+.langs,
+.css-select,
+.fa,
+.sidebar-cont,
+.entry-meta,
+.footer{
+display:none !important;
+}

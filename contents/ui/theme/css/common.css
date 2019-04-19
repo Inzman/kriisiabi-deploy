@@ -1,0 +1,61 @@
+body {
+font-family: 'Lato', sans-serif;
+}
+ul.lead, ol.lead {
+color:#11A3AF;
+font-weight:500;
+list-style:none;
+margin-bottom:40px;
+text-transform:uppercase;
+}
+ul.lead li, ol.lead li {
+margin-bottom:8px;
+padding-left:30px;
+position:relative;
+}
+ul.lead li::before,
+ol.lead li::before {
+color:#000;
+content:"\f00c";
+font-family: "Font Awesome 5 Pro";
+font-size:inherit;
+left:3px;
+line-height:inherit;
+position:absolute;
+top:0;
+}
+.ph li {
+border-bottom:1px dotted #000;
+}
+.attention {
+background-color:#D3EEF3;
+border-radius:8px;
+margin-top:10px;
+padding-bottom:20px;
+padding-left:15px;
+padding-top:20px;
+}
+li.attention {
+list-style:none;
+margin-bottom:10px;
+}
+@media (min-width: 767px) {
+ul.lead, ol.lead {
+font-size:1.8rem;
+}
+.attention {
+padding-left:35px;
+}
+}
+.attention::before {
+content:'' !important;
+}
+#tinymce .attention::before {
+content:'Pööra tähelepanu' !important;
+}
+#tinymce .attention::before,
+.attention-span {
+color:#39A3B0;
+display:block;
+font-style:italic;
+}

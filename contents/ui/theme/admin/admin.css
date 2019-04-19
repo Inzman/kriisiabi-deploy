@@ -1,0 +1,16 @@
+.acf-editor-wrap iframe {
+min-height:400px;
+}
+.status-sticky {  }
+.status-draft { background: #ffffe0 !important;}
+.story, .status-future { background: #E9F2D3 !important;}
+.status-pending { background: #D3E4ED !important;}
+.status-private { background: #FFECE6 !important;}
+.post-password-required { background: #ff9894 !important;}
+.list-thumbnail[src$="svg"]{
+width:100px;
+}
+.list-thumbnail {
+height:auto;
+max-width:100px;
+}
